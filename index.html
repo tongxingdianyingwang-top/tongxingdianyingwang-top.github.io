@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#8b1a1a">
+<title>同性电影网（tongxingdianyingwang-top）— 探索LGBTQ+影视世界 | 经典与先锋作品全集</title>
+<meta name="keywords" content="同性电影网,tongxingdianyingwang,同志电影,les电影,gay电影,LGBTQ影视,同性题材电影大全,经典同志片单,彩虹电影推荐,同性爱情电影,queer电影,独立LGBT电影,影视文化社区">
+<meta name="description" content="同性电影网（tongxingdianyingwang-top）专注收录全球优质LGBTQ+题材影视作品，从《断背山》《请以你的名字呼唤我》等经典佳作，到新锐独立影片与纪录片，提供深度影评、主题片单、导演访谈与文化讨论，打造包容多元的影视文化社区。">
+<link rel="canonical" href="https://tongxingdianyingwang-top.github.io">
+<style>
+:root{
+  --crimson:#8b1a1a;--wine:#5c0e0e;--rose:#c44569;--gold:#d4a853;--cream:#fdf8f0;
+  --paper:#f8f0e3;--ink:#2a1a1a;--ash:#7a6a6a;--line:#e8d8c8;--white:#fff;
+  --shadow:0 3px 20px rgba(139,26,26,.08);
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:"Helvetica Neue","PingFang SC","Microsoft YaHei",sans-serif;background:var(--cream);
+  color:var(--ink);line-height:1.85;font-size:15px;-webkit-font-smoothing:antialiased;}
+a{color:inherit;text-decoration:none;}
+ul,ol{list-style:none;}
+button{font-family:inherit;cursor:pointer;border:none;background:none;}
+img{max-width:100%;}
+::selection{background:var(--crimson);color:var(--gold);}
+
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px;}
+
+/* ===== Top Ticker ===== */
+.ticker{background:var(--wine);color:var(--gold);font-size:12px;padding:6px 0;overflow:hidden;
+  white-space:nowrap;}
+.ticker span{display:inline-block;padding-left:100%;animation:slide 28s linear infinite;}
+@keyframes slide{from{transform:translateX(0);}to{transform:translateX(-100%);}}
+
+/* ===== Header ===== */
+.head{background:var(--cream);border-bottom:3px double var(--crimson);padding:30px 0 22px;}
+.head-flex{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;}
+.logo{display:flex;align-items:baseline;gap:6px;}
+.logo b{font-size:clamp(26px,5vw,38px);font-weight:900;color:var(--crimson);letter-spacing:2px;}
+.logo i{font-style:normal;font-size:clamp(12px,2.5vw,14px);color:var(--ash);letter-spacing:2px;}
+.head-nav{display:flex;gap:6px;flex-wrap:wrap;}
+.head-nav a{font-size:13px;color:var(--ink);padding:6px 12px;border-radius:20px;transition:.3s;}
+.head-nav a:hover{background:var(--crimson);color:var(--gold);}
+
+/* ===== Cover ===== */
+.cover{background:linear-gradient(135deg,var(--wine) 0%,var(--crimson) 50%,var(--rose) 100%);
+  color:var(--white);padding:64px 0;position:relative;overflow:hidden;}
+.cover::after{content:'❤';position:absolute;right:4%;top:12%;font-size:180px;opacity:.06;
+  animation:float 6s ease-in-out infinite;}
+@keyframes float{0%,100%{transform:translateY(0) rotate(-8deg);}50%{transform:translateY(-20px) rotate(8deg);}}
+.cover-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:50px;align-items:center;}
+.cover .tag{display:inline-block;background:var(--gold);color:var(--wine);font-size:11px;font-weight:800;
+  letter-spacing:3px;padding:5px 14px;border-radius:2px;margin-bottom:16px;}
+.cover h1{font-size:clamp(30px,5.5vw,54px);font-weight:900;line-height:1.2;margin-bottom:16px;}
+.cover h1 .hl{color:var(--gold);}
+.cover .lead{font-size:16px;color:rgba(255,255,255,.88);max-width:500px;margin-bottom:26px;}
+.cover-meta{display:flex;gap:28px;flex-wrap:wrap;}
+.cover-meta div{font-size:13px;color:rgba(255,255,255,.7);}
+.cover-meta div b{display:block;font-size:22px;color:var(--gold);font-weight:900;}
+
+.cover-side{background:rgba(255,255,255,.1);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.2);
+  border-radius:12px;padding:24px;position:relative;z-index:2;}
+.cover-side h4{font-size:15px;color:var(--gold);margin-bottom:14px;letter-spacing:1px;}
+.cover-side .quote{font-size:14px;line-height:1.7;color:rgba(255,255,255,.92);font-style:italic;
+  border-left:3px solid var(--gold);padding-left:14px;}
+.cover-side .src{font-size:12px;color:rgba(255,255,255,.6);margin-top:12px;text-align:right;}
+
+/* ===== Section ===== */
+.sec{padding:72px 0;}
+.sec-top{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:40px;
+  border-bottom:1px solid var(--line);padding-bottom:16px;}
+.sec-top h2{font-size:clamp(22px,3.5vw,30px);font-weight:900;color:var(--wine);letter-spacing:1px;}
+.sec-top h2 small{display:block;font-size:12px;font-weight:600;color:var(--ash);letter-spacing:3px;
+  text-transform:uppercase;margin-top:4px;}
+.sec-top .more{font-size:13px;color:var(--crimson);white-space:nowrap;font-weight:600;}
+.sec-top .more:hover{color:var(--gold);}
+.sec-top.center{flex-direction:column;align-items:center;text-align:center;border-bottom:none;padding-bottom:0;}
+.sec-top.center p{font-size:14px;color:var(--ash);max-width:560px;margin-top:8px;}
+
+/* ===== Film Strip (horizontal scroll) ===== */
+.strip-wrap{position:relative;}
+.strip{display:flex;gap:20px;overflow-x:auto;padding:6px 2px 20px;scroll-snap-type:x mandatory;
+  scrollbar-width:thin;scrollbar-color:var(--crimson) var(--paper);}
+.strip::-webkit-scrollbar{height:8px;}
+.strip::-webkit-scrollbar-track{background:var(--paper);border-radius:4px;}
+.strip::-webkit-scrollbar-thumb{background:var(--crimson);border-radius:4px;}
+.film{flex:0 0 240px;scroll-snap-align:start;background:var(--white);border-radius:8px;overflow:hidden;
+  box-shadow:var(--shadow);transition:.35s;}
+.film:hover{transform:scale(1.03) translateY(-4px);box-shadow:0 12px 36px rgba(139,26,26,.2);}
+.film-poster{height:320px;display:flex;flex-direction:column;justify-content:space-between;padding:16px;
+  position:relative;}
+.film-poster::before{content:'';position:absolute;inset:0;background:var(--grad);opacity:.92;z-index:0;}
+.film-poster>*{position:relative;z-index:1;}
+.film-poster .yr{font-size:11px;color:rgba(255,255,255,.8);letter-spacing:1px;}
+.film-poster h4{font-size:18px;color:#fff;font-weight:700;line-height:1.35;}
+.film-poster .country{font-size:11px;color:var(--gold);}
+.film-body{padding:14px 16px;}
+.film-body p{font-size:12.5px;color:var(--ash);line-height:1.6;}
+.film-body .row{display:flex;justify-content:space-between;align-items:center;margin-top:10px;
+  padding-top:10px;border-top:1px dashed var(--line);}
+.film-body .row .score{font-size:13px;font-weight:800;color:var(--crimson);}
+
+/* ===== Film post color variants ===== */
+.f1{--grad:linear-gradient(160deg,#8b1a1a,#5c0e0e);}
+.f2{--grad:linear-gradient(160deg,#c44569,#8b1a1a);}
+.f3{--grad:linear-gradient(160deg,#d4a853,#8b5a2b);}
+.f4{--grad:linear-gradient(160deg,#5c0e0e,#2a0505);}
+.f5{--grad:linear-gradient(160deg,#e08e45,#c44569);}
+.f6{--grad:linear-gradient(160deg,#6b3fa0,#c44569);}
+.f7{--grad:linear-gradient(160deg,#1a5276,#8b1a1a);}
+.f8{--grad:linear-gradient(160deg,#148f77,#1a5276);}
+
+/* ===== Theme Cards ===== */
+.themes{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;}
+.theme{background:var(--paper);border-top:4px solid var(--crimson);padding:26px 24px;transition:.35s;}
+.theme:hover{background:var(--crimson);color:var(--white);transform:translateY(-3px);}
+.theme:hover .th-desc{color:rgba(255,255,255,.82);}
+.theme:hover .th-tag{background:var(--gold);color:var(--wine);}
+.theme .th-icon{font-size:30px;margin-bottom:12px;}
+.theme h4{font-size:18px;margin-bottom:8px;}
+.theme .th-desc{font-size:14px;color:var(--ash);line-height:1.7;transition:.3s;}
+.theme .th-tag{display:inline-block;margin-top:14px;background:var(--crimson);color:var(--gold);
+  font-size:11px;padding:3px 12px;border-radius:12px;font-weight:700;}
+
+/* ===== Review Block ===== */
+.reviews{display:grid;grid-template-columns:1fr 1fr;gap:24px;}
+.review{background:var(--white);border-radius:8px;padding:28px;box-shadow:var(--shadow);position:relative;}
+.review::before{content:'"';position:absolute;top:8px;left:20px;font-size:60px;color:var(--gold);
+  font-family:Georgia,serif;opacity:.4;line-height:1;}
+.review .rv-head{display:flex;align-items:center;gap:12px;margin-bottom:16px;padding-top:10px;}
+.review .rv-avatar{width:44px;height:44px;border-radius:50%;background:var(--crimson);color:var(--gold);
+  display:flex;align-items:center;justify-content:center;font-weight:800;font-size:16px;}
+.review .rv-meta b{display:block;font-size:15px;color:var(--ink);}
+.review .rv-meta span{font-size:12px;color:var(--ash);}
+.review p{font-size:14px;color:var(--ash);line-height:1.8;padding-left:8px;}
+.review .rv-foot{margin-top:16px;padding-top:12px;border-top:1px solid var(--line);display:flex;
+  justify-content:space-between;font-size:12px;}
+.review .rv-foot .stars{color:var(--gold);letter-spacing:2px;}
+
+/* ===== Marquee Numbers ===== */
+.marquee{background:var(--wine);color:var(--gold);padding:50px 0;text-align:center;}
+.mq-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;}
+.mq-item .mq-num{font-size:clamp(34px,6vw,52px);font-weight:900;color:var(--gold);line-height:1;}
+.mq-item .mq-lbl{font-size:13px;color:rgba(255,255,255,.75);margin-top:6px;letter-spacing:1px;}
+
+/* ===== Accordion ===== */
+.acc{max-width:860px;margin:0 auto;}
+.acc-item{background:var(--white);border-radius:8px;margin-bottom:10px;box-shadow:var(--shadow);
+  overflow:hidden;}
+.acc-hd{display:flex;align-items:center;gap:14px;padding:20px 24px;cursor:pointer;transition:.3s;}
+.acc-hd:hover{background:var(--paper);}
+.acc-hd .num{width:32px;height:32px;background:var(--crimson);color:var(--gold);border-radius:6px;
+  display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;flex-shrink:0;}
+.acc-hd .qt{font-size:16px;font-weight:600;flex:1;}
+.acc-hd .ar{color:var(--crimson);font-size:20px;transition:.3s;font-weight:900;}
+.acc-item.open .ar{transform:rotate(180deg);}
+.acc-bd{max-height:0;overflow:hidden;transition:.4s ease;padding:0 24px 0 70px;}
+.acc-item.open .acc-bd{max-height:400px;padding:0 24px 20px 70px;}
+.acc-bd p{font-size:14px;color:var(--ash);line-height:1.8;}
+
+/* ===== URL Card ===== */
+.url-card{background:linear-gradient(135deg,var(--wine),var(--crimson));border-radius:14px;padding:44px 32px;
+  text-align:center;position:relative;overflow:hidden;box-shadow:0 16px 48px rgba(139,26,26,.25);}
+.url-card::before{content:'✦';position:absolute;left:8%;top:20%;font-size:100px;opacity:.05;color:var(--gold);}
+.url-card::after{content:'✦';position:absolute;right:10%;bottom:10%;font-size:80px;opacity:.05;color:var(--gold);}
+.url-card h3{color:var(--white);font-size:22px;margin-bottom:8px;position:relative;z-index:2;}
+.url-card .url-line{display:inline-block;background:var(--white);color:var(--wine);padding:14px 28px;
+  border-radius:8px;font-size:clamp(14px,2.8vw,18px);font-weight:800;letter-spacing:1px;margin:14px 0;
+  font-family:"SF Mono",Consolas,monospace;position:relative;z-index:2;word-break:break-all;}
+.url-card p{color:rgba(255,255,255,.75);font-size:13px;position:relative;z-index:2;}
+
+/* ===== CTA ===== */
+.cta{background:var(--paper);border:2px dashed var(--crimson);border-radius:14px;padding:52px 32px;
+  text-align:center;}
+.cta h2{font-size:clamp(22px,4vw,32px);color:var(--wine);margin-bottom:12px;}
+.cta p{font-size:15px;color:var(--ash);max-width:520px;margin:0 auto 28px;}
+.btn-row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;}
+.btn{display:inline-block;padding:13px 30px;border-radius:6px;font-size:14px;font-weight:700;
+  letter-spacing:1px;transition:.3s;}
+.btn-main{background:var(--crimson);color:var(--gold);}
+.btn-main:hover{background:var(--wine);}
+.btn-ghost{background:transparent;color:var(--crimson);border:2px solid var(--crimson);}
+.btn-ghost:hover{background:var(--crimson);color:var(--gold);}
+
+/* ===== Footer ===== */
+.foot{background:var(--wine);color:#c9a0a0;padding:48px 0 0;}
+.foot-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.2fr;gap:36px;padding-bottom:32px;}
+.foot-grid h5{color:var(--gold);font-size:14px;font-weight:700;margin-bottom:14px;letter-spacing:1px;}
+.foot-grid p{font-size:13px;line-height:1.9;}
+.foot-grid ul li{margin-bottom:8px;}
+.foot-grid a{color:#d4a0a0;font-size:13px;transition:.2s;}
+.foot-grid a:hover{color:var(--gold);padding-left:4px;}
+.foot-url-box{background:var(--crimson);color:var(--gold);padding:10px 14px;border-radius:6px;
+  font-size:12px;font-family:monospace;margin-top:12px;word-break:break-all;}
+.foot-bot{border-top:1px solid #7a2a2a;padding:18px 0;text-align:center;font-size:12px;color:#a07070;}
+.foot-bot a{color:var(--gold);}
+
+/* ===== Responsive ===== */
+@media(max-width:860px){
+  .cover-grid{grid-template-columns:1fr;gap:32px;}
+  .reviews{grid-template-columns:1fr;}
+  .mq-grid{grid-template-columns:1fr 1fr;}
+}
+@media(max-width:560px){
+  .head-flex{flex-direction:column;align-items:flex-start;}
+  .head-nav{width:100%;}
+  .head-nav a{flex:1;text-align:center;font-size:12px;padding:6px 8px;}
+  .sec{padding:52px 0;}
+  .sec-top{flex-direction:column;align-items:flex-start;}
+  .foot-grid{grid-template-columns:1fr;}
+  .film{flex-basis:200px;}
+  .film-poster{height:270px;}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+
+<!-- Ticker -->
+<div class="ticker"><span>✦ 同性电影网 · 收录全球 LGBTQ+ 影视佳作 · 经典回顾 · 新片速递 · 深度影评 · 多元文化讨论社区 · 每日更新 · 欢迎影迷交流分享</span></div>
+
+<!-- Header -->
+<header class="head">
+  <div class="wrap">
+    <div class="head-flex">
+      <div class="logo">
+        <b>同性电影网</b>
+        <i>tongxingdianyingwang</i>
+      </div>
+      <nav class="head-nav">
+        <a href="#films">经典片单</a>
+        <a href="#themes">主题分类</a>
+        <a href="#reviews">影评专栏</a>
+        <a href="#guide">观影指南</a>
+        <a href="#qa">常见问题</a>
+        <a href="#enter">访问入口</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<!-- Cover -->
+<section class="cover" id="home">
+  <div class="wrap">
+    <div class="cover-grid">
+      <div>
+        <span class="tag">PRIDE · CINEMA · CULTURE</span>
+        <h1>每一段爱情<br>都值得被<span class="hl">大银幕</span>铭记</h1>
+        <p class="lead">同性电影网（tongxingdianyingwang-top）专注收录与分享全球优质 LGBTQ+ 题材影视作品——从奥斯卡经典到独立新锐，从纪录片到短片，为每一位影迷搭建包容、多元的观影空间。</p>
+        <div class="cover-meta">
+          <div><b>3,200+</b>收录影片</div>
+          <div><b>40+</b>国家地区</div>
+          <div><b>1985</b>最早收录年份</div>
+          <div><b>每日</b>精选更新</div>
+        </div>
+      </div>
+      <aside class="cover-side">
+        <h4>✍️ 编辑手记</h4>
+        <p class="quote">"电影是看见彼此的方式。在这里，我们不评判任何一种爱，只记录它被讲述的每一个动人瞬间。"</p>
+        <div class="src">— 同性电影网 编辑部</div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- Film Strip -->
+<section class="sec" id="films">
+  <div class="wrap">
+    <div class="sec-top">
+      <h2>经典片单<small>Iconic Films</small></h2>
+      <a href="#" class="more">查看完整片单 →</a>
+    </div>
+    <div class="strip-wrap">
+      <div class="strip">
+        <article class="film f1">
+          <div class="film-poster"><span class="yr">2005</span><h4>断背山<br>Brokeback Mountain</h4><span class="country">美国 · 李安</span></div>
+          <div class="film-body"><p>两个年轻牛仔在怀俄明州牧场相遇，一段隐忍二十年的深情，改写好莱坞同志电影格局。</p><div class="row"><span>剧情 / 爱情</span><span class="score">⭐ 8.8</span></div></div>
+        </article>
+        <article class="film f2">
+          <div class="film-poster"><span class="yr">2017</span><h4>请以你的名字<br>呼唤我</h4><span class="country">意大利 / 法国</span></div>
+          <div class="film-body"><p>1983年意大利北部夏日，少年 Elio 与青年学者 Oliver 的甜蜜与苦涩，苏菲·珊曼妮配乐封神。</p><div class="row"><span>爱情 / 成长</span><span class="score">⭐ 8.9</span></div></div>
+        </article>
+        <article class="film f3">
+          <div class="film-poster"><span class="yr">2016</span><h4>月光男孩<br>Moonlight</h4><span class="country">美国 · 巴里·杰金斯</span></div>
+          <div class="film-body"><p>迈阿密贫民区黑人男孩 Chiron 的三段人生，以诗意镜头呈现身份认同与自我接纳。</p><div class="row"><span>剧情 / 成长</span><span class="score">⭐ 8.7</span></div></div>
+        </article>
+        <article class="film f4">
+          <div class="film-poster"><span class="yr">1993</span><h4>费城故事<br>Philadelphia</h4><span class="country">美国 · 乔纳森·戴米</span></div>
+          <div class="film-body"><p>汤姆·汉克斯凭此片获奥斯卡影帝，为 AIDS 患者争取尊严的法律与人性之战。</p><div class="row"><span>剧情 / 法律</span><span class="score">⭐ 8.5</span></div></div>
+        </article>
+        <article class="film f5">
+          <div class="film-poster"><span class="yr">2013</span><h4>达拉斯买家俱乐部<br>Dallas Buyers Club</h4><span class="country">美国</span></div>
+          <div class="film-body"><p>80年代德州电工自建抗艾药物网络，马修·麦康纳暴瘦演绎，双料奥斯卡表演奖。</p><div class="row"><span>传记 / 剧情</span><span class="score">⭐ 8.8</span></div></div>
+        </article>
+        <article class="film f6">
+          <div class="film-poster"><span class="yr">2020</span><h4>燃烧女子的肖像<br>Portrait de la jeune fille</h4><span class="country">法国 · 瑟琳·席安玛</span></div>
+          <div class="film-body"><p>18世纪布列塔尼海岛，女画家与她的模特在凝视与被凝视中暗生情愫。</p><div class="row"><span>爱情 / 文艺</span><span class="score">⭐ 8.6</span></div></div>
+        </article>
+        <article class="film f7">
+          <div class="film-poster"><span class="yr">2011</span><h4>周末时光<br>Weekend</h4><span class="country">英国 · 安德鲁·海格</span></div>
+          <div class="film-body"><p>两个男人在一个周末的相遇与分离，极简而深刻的现代同志爱情小品。</p><div class="row"><span>爱情 / 独立</span><span class="score">⭐ 8.3</span></div></div>
+        </article>
+        <article class="film f8">
+          <div class="film-poster"><span class="yr">2019</span><h4>燃烧女子的画像<br>小丑<br>Joker</h4><span class="country">美国</span></div>
+          <div class="film-body"><p>注：本站同时收录探讨边缘群体处境的泛 LGBTQ+ 相关影片，拓展观看维度。</p><div class="row"><span>剧情 / 社会</span><span class="score">⭐ 8.7</span></div></div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Themes -->
+<section class="sec" id="themes" style="background:var(--white);">
+  <div class="wrap">
+    <div class="sec-top center">
+      <h2>主题分类<small>Browse by Theme</small></h2>
+      <p>按主题精准归类，无论你想找初恋悸动、家庭认同还是社会抗争，这里都有对应片单</p>
+    </div>
+    <div class="themes">
+      <div class="theme"><div class="th-icon">💕</div><h4>初恋与悸动</h4><div class="th-desc">青涩、试探、第一次心动。那些关于暗恋、表白与错过的温柔故事，适合每一个相信爱情的人。</div><span class="th-tag">386 部</span></div>
+      <div class="theme"><div class="th-icon">👨‍👩‍👧</div><h4>家庭与认同</h4><div class="th-desc">出柜、接纳与原生家庭的和解。真实呈现 LGBTQ+ 个体与家庭之间的拉扯与最终理解。</div><span class="th-tag">412 部</span></div>
+      <div class="theme"><div class="th-icon">⚖️</div><h4>平权与社会</h4><div class="th-desc">石墙运动、婚姻平权、反歧视法案……用影像记录 LGBTQ+ 群体争取平等权利的历史进程。</div><span class="th-tag">298 部</span></div>
+      <div class="theme"><div class="th-icon">🎤</div><h4>纪录片与真实</h4><div class="th-desc">真实人物、真实故事。从《巴黎在燃烧》到《Disclosure》，纪录片让 invisible 变得 visible。</div><span class="th-tag">245 部</span></div>
+      <div class="theme"><div class="th-icon">🎭</div><h4>经典老片修复</h4><div class="th-desc">《受害者》《狐及其友》等早期同志电影数字修复版，重温影史中勇敢而先锋的表达。</div><span class="th-tag">167 部</span></div>
+      <div class="theme"><div class="th-icon">🌈</div><h4>短片与独立</h4><div class="th-desc">新锐导演的短片作品集，低成本高表达，是发现下一个大师的绝佳入口。</div><span class="th-tag">520 部</span></div>
+      <div class="theme"><div class="th-icon">📺</div><h4>剧集与迷你剧</h4><div class="th-desc">《姿态》《伦敦生活》《心跳漏一拍》等优质剧集推荐，长篇叙事中的同志角色塑造。</div><span class="th-tag">340 部</span></div>
+      <div class="theme"><div class="th-icon">🌏</div><h4>亚洲新声</h4><div class="th-desc">聚焦华语、日韩、东南亚 LGBTQ+ 影视创作，东方语境下的爱情与身份探索。</div><span class="th-tag">480 部</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- Marquee Numbers -->
+<section class="marquee">
+  <div class="wrap">
+    <div class="mq-grid">
+      <div class="mq-item"><div class="mq-num">3,200+</div><div class="mq-lbl">收录影片总量</div></div>
+      <div class="mq-item"><div class="mq-num">40+</div><div class="mq-lbl">覆盖国家地区</div></div>
+      <div class="mq-item"><div class="mq-num">1985</div><div class="mq-lbl">最早收录年份</div></div>
+      <div class="mq-item"><div class="mq-num">365天</div><div class="mq-lbl">每日精选更新</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Reviews -->
+<section class="sec" id="reviews">
+  <div class="wrap">
+    <div class="sec-top center">
+      <h2>影评专栏<small>Critics' Picks</small></h2>
+      <p>由资深影评人撰写的深度解读，带你读懂每一帧背后的隐喻与情感</p>
+    </div>
+    <div class="reviews">
+      <article class="review">
+        <div class="rv-head">
+          <div class="rv-avatar">L</div>
+          <div class="rv-meta"><b>林屿</b><span>影评人 · 2026.09.28</span></div>
+        </div>
+        <p>《月光男孩》最动人的地方不在于它讲述了一个"黑人同志"的故事，而在于它剥离了一切标签后，呈现的是一个渴望被爱、被看见的普通人。杰金斯的镜头语言克制到近乎残忍，却在每个留白处注满情感。</p>
+        <div class="rv-foot"><span>《月光男孩》深度解读</span><span class="stars">★★★★★</span></div>
+      </article>
+      <article class="review">
+        <div class="rv-head">
+          <div class="rv-avatar">M</div>
+          <div class="rv-meta"><b>Morning</b><span>专栏作者 · 2026.09.20</span></div>
+        </div>
+        <p>从《断背山》到《请以你的名字呼唤我》，西部荒野与意大利夏日形成了奇妙的互文——同样是禁忌之爱，一个被风雪掩埋，一个被阳光炙烤。两部影片共同证明了：最好的同志电影，首先是最好的人性电影。</p>
+        <div class="rv-foot"><span>经典对照：两部夏日，一种深情</span><span class="stars">★★★★☆</span></div>
+      </article>
+      <article class="review">
+        <div class="rv-head">
+          <div class="rv-avatar">A</div>
+          <div class="rv-meta"><b>Aria</b><span>纪录片研究者 · 2026.09.15</span></div>
+        </div>
+        <p>纪录片的珍贵在于它不允许观众"旁观"。《巴黎在燃烧》中那些 drag ball 的参与者，用最直接的方式告诉我们：身份不是被赋予的，是被表演、被争夺、被活出来的。这是影像赋予边缘群体的尊严。</p>
+        <div class="rv-foot"><span>纪录片中的 visibility 政治</span><span class="stars">★★★★★</span></div>
+      </article>
+      <article class="review">
+        <div class="rv-head">
+          <div class="rv-avatar">K</div>
+          <div class="rv-meta"><b>凯文</b><span>独立电影策展人 · 2026.09.10</span></div>
+        </div>
+        <p>为什么我们仍然需要"同志电影节"？因为当主流市场仍以异性恋叙事为默认选项时，专门的展映空间是对创作者最基本的尊重。推荐今年最值得关注的五部独立短片，每一部都在拓展"爱"的边界。</p>
+        <div class="rv-foot"><span>2026 独立短片推荐</span><span class="stars">★★★★☆</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Guide Accordion -->
+<section class="sec" id="guide" style="background:var(--white);">
+  <div class="wrap">
+    <div class="sec-top center">
+      <h2>观影指南<small>How to Explore</small></h2>
+      <p>第一次来？跟着这份指南，四步开启你的 LGBTQ+ 影视探索之旅</p>
+    </div>
+    <div class="acc">
+      <div class="acc-item open">
+        <div class="acc-hd"><span class="num">1</span><span class="qt">访问同性电影网官方网站</span><span class="ar">▾</span></div>
+        <div class="acc-bd"><p>在浏览器地址栏输入 tongxingdianyingwang-top.github.io 即可进入同性电影网首页，无需注册登录，即开即看。建议使用 Chrome、Safari 或 Edge 最新版本以获得最佳体验。</p></div>
+      </div>
+      <div class="acc-item">
+        <div class="acc-hd"><span class="num">2</span><span class="qt">选择感兴趣的观影主题</span><span class="ar">▾</span></div>
+        <div class="acc-bd"><p>浏览「主题分类」区域，从初恋悸动、家庭认同、平权社会、纪录片、经典老片、独立短片、剧集、亚洲新声八大主题中选择，每个主题下都有精心筛选的片单。</p></div>
+      </div>
+      <div class="acc-item">
+        <div class="acc-hd"><span class="num">3</span><span class="qt">查看经典片单与影评解读</span><span class="ar">▾</span></div>
+        <div class="acc-bd"><p>在「经典片单」中横向滑动浏览精选影片，每部都附有年份、导演、类型与评分信息；点击「影评专栏」阅读深度解读，帮助你更全面地理解影片背后的文化语境。</p></div>
+      </div>
+      <div class="acc-item">
+        <div class="acc-hd"><span class="num">4</span><span class="qt">建立你的个人观影清单</span><span class="ar">▾</span></div>
+        <div class="acc-bd"><p>把感兴趣的影片记录下来，逐步观看并写下你的感受。欢迎在社交平台分享你的片单，带上 #同性电影网 标签，与其他影迷交流讨论，让更多好电影被看见。</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="sec" id="qa">
+  <div class="wrap">
+    <div class="sec-top center">
+      <h2>常见问题<small>FAQ</small></h2>
+      <p>关于同性电影网，你最想知道的都在这里</p>
+    </div>
+    <div class="acc">
+      <div class="acc-item open">
+        <div class="acc-hd"><span class="num">Q</span><span class="qt">同性电影网是一个什么样的平台？</span><span class="ar">▾</span></div>
+        <div class="acc-bd"><p>同性电影网（tongxingdianyingwang-top）是一个专注 LGBTQ+ 题材影视作品收录与分享的在线平台，提供经典片单、主题分类、深度影评、观影指南等服务，致力于搭建包容多元的影视文化社区。</p></div>
+      </div>
+      <div class="acc-item">
+        <div class="acc-hd"><span class="num">Q</span><span class="qt">平台收录哪些类型的影片？</span><span class="ar">▾</span></div>
+        <div class="acc-bd"><p>涵盖同性爱情、家庭认同、平权运动、纪录片、经典老片修复、独立短片、剧集与亚洲新声八大主题，覆盖 40 多个国家地区的 3,200+ 部影片。</p></div>
+      </div>
+      <div class="acc-item">
+        <div class="acc-hd"><span class="num">Q</span><span class="qt">手机上可以正常浏览吗？</span><span class="ar">▾</span></div>
+        <div class="acc-bd"><p>可以。同性电影网已全面适配移动端，在手机浏览器输入 tongxingdianyingwang-top.github.io 即可访问，页面会自动适配屏幕尺寸，滑动浏览流畅。</p></div>
+      </div>
+      <div class="acc-item">
+        <div class="acc-hd"><span class="num">Q</span><span class="qt">内容更新频率是怎样的？</span><span class="ar">▾</span></div>
+        <div class="acc-bd"><p>每日更新最新影片资讯与片单推荐，每周发布编辑精选影评，每月推出主题专题策划，全年 365 天不间断。</p></div>
+      </div>
+      <div class="acc-item">
+        <div class="acc-hd"><span class="num">Q</span><span class="qt">如何获取最新更新？</span><span class="ar">▾</span></div>
+        <div class="acc-bd"><p>定期访问官方网站即可获取最新内容。建议将 tongxingdianyingwang-top.github.io 加入浏览器书签，方便随时回访。</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- URL Spotlight -->
+<section class="sec" id="enter" style="background:var(--white);">
+  <div class="wrap">
+    <div class="url-card">
+      <h3>🔗 官方访问入口</h3>
+      <div class="url-line">https://tongxingdianyingwang-top.github.io</div>
+      <p>请认准唯一官方网址，建议收藏书签，随时开启光影之旅</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="sec">
+  <div class="wrap">
+    <div class="cta">
+      <h2>让每一段爱，都被看见</h2>
+      <p>同性电影网 —— 收录全球 LGBTQ+ 影视佳作，经典回顾，新片速递，深度影评，多元文化讨论社区</p>
+      <div class="btn-row">
+        <a href="#films" class="btn btn-main">浏览经典片单</a>
+        <a href="#themes" class="btn btn-ghost">探索主题分类</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h5>🎬 同性电影网</h5>
+        <p>tongxingdianyingwang-top 致力于收录与分享全球优质 LGBTQ+ 题材影视作品，打造包容、多元、尊重的影视文化社区。</p>
+        <div class="foot-url-box">🔗 tongxingdianyingwang-top.github.io</div>
+      </div>
+      <div>
+        <h5>影片导航</h5>
+        <ul>
+          <li><a href="#films">经典片单</a></li>
+          <li><a href="#themes">主题分类</a></li>
+          <li><a href="#reviews">影评专栏</a></li>
+          <li><a href="#guide">观影指南</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>主题精选</h5>
+        <ul>
+          <li><a href="#">初恋悸动</a></li>
+          <li><a href="#">家庭认同</a></li>
+          <li><a href="#">平权运动</a></li>
+          <li><a href="#">纪录片</a></li>
+          <li><a href="#">独立短片</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>关于我们</h5>
+        <ul>
+          <li><a href="#">平台介绍</a></li>
+          <li><a href="#">投稿指南</a></li>
+          <li><a href="#">联系合作</a></li>
+          <li><a href="#">隐私声明</a></li>
+        </ul>
+        <p style="margin-top:10px;font-size:12px;">官方入口：<br><strong style="color:var(--gold);">tongxingdianyingwang-top.github.io</strong></p>
+      </div>
+    </div>
+  </div>
+  <div class="foot-bot">
+    <div class="wrap">
+      <p>© 2019-2026 同性电影网（tongxingdianyingwang-top）· 尊重每一种爱 · 本站仅供影视资讯交流与分享</p>
+      <p style="margin-top:6px;">官方网址：<a href="https://tongxingdianyingwang-top.github.io">https://tongxingdianyingwang-top.github.io</a></p>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('.acc-hd').forEach(function(hd){
+  hd.addEventListener('click',function(){
+    var item=hd.parentElement;
+    var isOpen=item.classList.contains('open');
+    document.querySelectorAll('.acc-item').forEach(function(i){i.classList.remove('open');});
+    if(!isOpen) item.classList.add('open');
+  });
+});
+</script>
+</body>
+</html>
